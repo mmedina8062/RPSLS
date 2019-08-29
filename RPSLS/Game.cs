@@ -26,6 +26,9 @@ namespace RPSLS
             if(numberOfPlayers == 1)
             {
                 
+            }else
+            {
+
             }
         }
 
