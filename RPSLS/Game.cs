@@ -6,10 +6,33 @@ using System.Threading.Tasks;
 
 namespace RPSLS
 {
-    class Game
+    public class Game
     {
         // instantiate two players as member variables
-        Player playerOne;
+        Player player1;
+        Player player2;
+        int numberOfPlayers;
+
+        public void NumberOfPlayers()
+        {
+            Console.WriteLine("Choose how many players: 1 or 2 players?");
+            string userInput = Console.ReadLine();
+            numberOfPlayers = int.Parse(userInput);
+       
+        }
+
+        public void CreateNumberofPlayers()
+        {
+            if(numberOfPlayers == 1)
+            {
+                
+            }
+        }
+
+        public void roundsOfGame()
+        {
+            Console.WriteLine("Best 2 out of 3...Good Luck!!");
+        }
 
 
 

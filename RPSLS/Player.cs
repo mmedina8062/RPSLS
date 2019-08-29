@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RPSLS
 {
-    class Player
+    public abstract class Player
     {
         //member variables (has a)
         public string name;
@@ -15,7 +15,7 @@ namespace RPSLS
         public string playerOption;
 
         //constructor (spawner)
-        public Player(string name)   
+        public Player(string name)
         {
             this.name = name;
             this.isWinner = false;
@@ -25,14 +25,8 @@ namespace RPSLS
 
         //members method (can do)
 
-        public string playerOptions() 
-        {
-            Console.WriteLine("Choose your weapon: Rock, Paper, Scissor, Lizzard, or Spock");
-            Console.ReadLine();
+        public abstract void Name();
 
-            return playerOption;
-        }
+        public abstract void playerOptions();
     }
 }
-
-
