@@ -21,14 +21,18 @@ namespace RPSLS
        
         }
 
-        public void CreateNumberofPlayers()
+        public void CreatePlayers()
         {
-            if(numberOfPlayers == 1)
+            if (numberOfPlayers == 1)
             {
-                
-            }else
-            {
+                player1 = new HumanPlayer();
+                player2 = new ComputerPlayer();
 
+            }
+            else if(numberOfPlayers == 2)
+            {
+                player1 = new HumanPlayer();
+                player2 = new HumanPlayer();
             }
         }
 

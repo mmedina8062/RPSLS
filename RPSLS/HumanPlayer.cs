@@ -6,12 +6,20 @@ using System.Threading.Tasks;
 
 namespace RPSLS
 {
-    class HumanPlayer : Player
+    public class HumanPlayer : Player
     {
+        //member variables
+    
 
-        public HumanPlayer(string name):base(name)
+
+
+        public HumanPlayer()
         {
-            //member variables
+            //constructor
+            this.name = "";
+            this.isWinner = false;
+            this.playerOption = "";
+            this.score = 0;
 
         }
 

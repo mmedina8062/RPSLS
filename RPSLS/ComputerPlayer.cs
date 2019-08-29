@@ -6,10 +6,16 @@ using System.Threading.Tasks;
 
 namespace RPSLS
 {
-    class ComputerPlayer : Player
+    public class ComputerPlayer : Player
     {
-        public ComputerPlayer(string name) : base(name)
+       
+
+        public ComputerPlayer()
         {
+            this.name = "";
+            this.isWinner = false;
+            this.playerOption = "";
+            this.score = 0;
 
         }
             

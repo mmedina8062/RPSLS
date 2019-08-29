@@ -15,9 +15,9 @@ namespace RPSLS
         public string playerOption;
 
         //constructor (spawner)
-        public Player(string name)
+        public Player()
         {
-            this.name = name;
+            this.name = "";
             this.isWinner = false;
             this.playerOption = "";
             this.score = 0;
