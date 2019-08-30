@@ -16,10 +16,6 @@ namespace RPSLS
         public HumanPlayer()
         {
             //constructor
-            this.name = "";
-            this.isWinner = false;
-            this.playerOption = "";
-            this.score = 0;
 
         }
 
@@ -33,6 +29,12 @@ namespace RPSLS
         {
             Console.WriteLine("Choose your weapon: Rock, Paper, Scissor, Lizzard, or Spock");
             playerOption = Console.ReadLine();
+        }
+
+        public override void RoundWon()
+        {
+
+        
         }
     }
 }

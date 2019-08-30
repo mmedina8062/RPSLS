@@ -10,7 +10,8 @@ namespace RPSLS
     {
         //member variables (has a)
         public string name;
-        public bool isWinner;
+        public bool roundWon;
+        public bool gameWon;
         public int score;
         public string playerOption;
 
@@ -18,9 +19,9 @@ namespace RPSLS
         public Player()
         {
             this.name = "";
-            this.isWinner = false;
+            this.roundWon = false;
+            this.gameWon = false;
             this.playerOption = "";
-            this.score = 0;
         }
 
         //members method (can do)
@@ -28,5 +29,9 @@ namespace RPSLS
         public abstract void Name();
 
         public abstract void playerOptions();
+
+        public abstract void RoundWon();
+
+        public abstract void GameWon();
     }
 }

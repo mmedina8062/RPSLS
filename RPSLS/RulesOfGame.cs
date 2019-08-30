@@ -10,14 +10,7 @@ namespace RPSLS
     {
 
         //members variable (has a)
-        string DisplayGameRules;
-
-
-        public RulesOfGame()
-        {
-            this.DisplayGameRules = " ";
-
-        }
+        
         //constructor
 
 
