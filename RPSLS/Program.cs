@@ -12,16 +12,24 @@ namespace RPSLS
         {
             Game game = new Game();
 
+            game.DisplayGameRules();
+
             game.NumberOfPlayers();
+
             game.CreatePlayers();
 
+            
            
 
-            
 
 
 
-         
+
+
+
+
+
+
         }
 
     }

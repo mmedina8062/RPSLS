@@ -11,16 +11,8 @@ namespace RPSLS
         // instantiate two players as member variables
         Player player1;
         Player player2;
-        int RoundsOfGame; 
         int numberOfPlayers;
-
-        //public Game()
-        //{
-            //this.RoundsOfGame = 3;
-            //this.numberOfPlayers = 2;
         
-        //}
-
 
         public void NumberOfPlayers()
         {
@@ -43,11 +35,6 @@ namespace RPSLS
                 player1 = new HumanPlayer();
                 player2 = new HumanPlayer();
             }
-        }
-
-        public string DisplayGameRules()
-        {
-            Console.WriteLine("Rock, Paper, Scissors, Lizard, Spock" + "/n" + "Rules of Game:" + "( Best 2 out of 3 rounds,  ")
         }
     }
 }
