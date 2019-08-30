@@ -10,9 +10,13 @@ namespace RPSLS
     {
         static void Main(string[] args)
         {
-            Game game = new Game();
+            RulesOfGame rulesOfGame = new RulesOfGame();
 
-            game.DisplayGameRules();
+
+            rulesOfGame.GameRules();
+
+
+            Game game = new Game();
 
             game.NumberOfPlayers();
 
