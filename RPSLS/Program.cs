@@ -12,18 +12,34 @@ namespace RPSLS
         {
             RulesOfGame rulesOfGame = new RulesOfGame();
 
-
-            rulesOfGame.GameRules();
-
+            HumanPlayer humanPlayer = new HumanPlayer();
 
             Game game = new Game();
+
+
+            rulesOfGame.GameRules();
 
             game.NumberOfPlayers();
 
             game.CreatePlayers();
 
+            humanPlayer.Name();
+
+            humanPlayer.playerOptions();
+
+            game.CompareOptions();
+
             
+            
+
+            
+
+            
+
            
+
+
+
 
 
 

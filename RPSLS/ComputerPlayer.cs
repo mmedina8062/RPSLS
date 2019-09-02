@@ -13,9 +13,9 @@ namespace RPSLS
         public ComputerPlayer()
         {
             this.name = "";
-            this.isWinner = false;
+            
+            this.gameWon = false;
             this.playerOption = "";
-            this.score = 0;
 
         }
             
@@ -27,7 +27,9 @@ namespace RPSLS
 
         public override void playerOptions()
         {
-            Console.WriteLine(); //might have to override class to add random to playerOptions
+            
         }
+
+       
     }
 }

@@ -10,18 +10,20 @@ namespace RPSLS
     {
         //member variables (has a)
         public string name;
-        public bool roundWon;
+        public string playerOption;
+        public bool compareOptions;
         public bool gameWon;
         public int score;
-        public string playerOption;
+
 
         //constructor (spawner)
         public Player()
         {
             this.name = "";
-            this.roundWon = false;
             this.gameWon = false;
             this.playerOption = "";
+            
+
         }
 
         //members method (can do)
@@ -30,8 +32,8 @@ namespace RPSLS
 
         public abstract void playerOptions();
 
-        public abstract void RoundWon();
+        
 
-        public abstract void GameWon();
+      
     }
 }
