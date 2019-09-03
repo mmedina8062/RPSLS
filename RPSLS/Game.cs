@@ -84,11 +84,6 @@ namespace RPSLS
             {
                 Console.WriteLine(player1 + "Wins");
             }
-            else
-            {
-                default;
-                Console.WriteLine("Please enter in an option that corresponds to the list option");
-            }
             return compareOptions;
         }
         
