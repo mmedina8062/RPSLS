@@ -12,7 +12,6 @@ namespace RPSLS
         Player player1;
         Player player2;
         int numberOfPlayers;
-        string compareOptions;
         string Rock;
         string Paper;
         string Scissor;
@@ -21,9 +20,9 @@ namespace RPSLS
 
         public Game()
         {
-            
-            
-       
+
+
+
         }
 
 
@@ -35,8 +34,9 @@ namespace RPSLS
 
         }
 
-        public void CreatePlayers()
+        public string CreatePlayers()
         {
+
             if (numberOfPlayers == 1)
             {
                 player1 = new HumanPlayer();
@@ -48,9 +48,9 @@ namespace RPSLS
                 player1 = new HumanPlayer();
                 player2 = new HumanPlayer();
             }
-       
-        }
+            return CreatePlayers();
 
+        }
         public void CompareOptions()
         {
 
@@ -71,7 +71,6 @@ namespace RPSLS
             {
                 Console.WriteLine(player1 + "Wins");
             }
-
 
         }
     }

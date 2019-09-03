@@ -40,7 +40,6 @@ namespace RPSLS
 
             Console.WriteLine("Choose your option: Rock, Paper, Scissor, Lizzard, or Spock");
             playerOption = Console.ReadLine();
-            Console.Clear();
 
 
         }

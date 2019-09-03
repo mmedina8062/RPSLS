@@ -8,6 +8,12 @@ namespace RPSLS
 {
     class Program
     {
+        static void ClearLine()
+        {
+            Console.SetCursorPosition(34, Console.CursorTop);
+            Console.Write(new string(' ', Console.WindowWidth));
+            Console.SetCursorPosition(0, Console.CursorTop - 1);
+        }
         static void Main(string[] args)
         {
             RulesOfGame rulesOfGame = new RulesOfGame();
@@ -28,15 +34,19 @@ namespace RPSLS
             humanPlayer.playerOptions();
 
             game.CompareOptions();
-
-            
-            
-
-            
+          
 
             
 
-           
+
+
+
+
+
+
+
+
+
 
 
 
