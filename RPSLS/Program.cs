@@ -10,9 +10,8 @@ namespace RPSLS
     {
         static void ClearLine()
         {
-            Console.SetCursorPosition(34, Console.CursorTop);
-            Console.Write(new string(' ', Console.WindowWidth));
-            Console.SetCursorPosition(0, Console.CursorTop - 1);
+            Console.SetCursorPosition(33, Console.CursorTop);
+            
         }
         static void Main(string[] args)
         {

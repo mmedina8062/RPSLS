@@ -60,7 +60,7 @@ namespace RPSLS
 
 
 
-        public object CompareOptions()
+        public string CompareOptions()
 
         {
             if (player1.playerOption == Rock && player2.playerOption == Rock)
