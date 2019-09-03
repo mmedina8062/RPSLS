@@ -13,7 +13,6 @@ namespace RPSLS
         public ComputerPlayer()
         {
             this.name = "";
-            
             this.gameWon = false;
             this.playerOption = "";
 

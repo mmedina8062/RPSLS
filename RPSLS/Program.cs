@@ -20,6 +20,8 @@ namespace RPSLS
 
             HumanPlayer humanPlayer = new HumanPlayer();
 
+            ComputerPlayer computerPlayer = new ComputerPlayer();
+
             Game game = new Game();
 
 
@@ -29,14 +31,15 @@ namespace RPSLS
 
             game.CreatePlayers();
 
+            computerPlayer.playerOptions();
+
             humanPlayer.Name();
 
             humanPlayer.playerOptions();
 
             game.CompareOptions();
-          
 
-            
+
 
 
 

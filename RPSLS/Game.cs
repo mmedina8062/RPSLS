@@ -12,31 +12,37 @@ namespace RPSLS
         Player player1;
         Player player2;
         int numberOfPlayers;
+        string compareOptions;
+        string playerOption;
         string Rock;
         string Paper;
         string Scissor;
         String Lizard;
         string Spock;
+        int score;
+
 
         public Game()
         {
 
 
 
+
+
         }
 
 
-        public void NumberOfPlayers()
+        public int NumberOfPlayers()
         {
             Console.WriteLine("Choose how many players: 1 or 2 players?");
             string userInput = Console.ReadLine();
             numberOfPlayers = int.Parse(userInput);
+            return numberOfPlayers;
 
         }
 
-        public string CreatePlayers()
+        public int CreatePlayers()
         {
-
             if (numberOfPlayers == 1)
             {
                 player1 = new HumanPlayer();
@@ -48,12 +54,15 @@ namespace RPSLS
                 player1 = new HumanPlayer();
                 player2 = new HumanPlayer();
             }
-            return CreatePlayers();
+            return numberOfPlayers;
 
         }
-        public void CompareOptions()
-        {
 
+
+
+        public object CompareOptions()
+
+        {
             if (player1.playerOption == Rock && player2.playerOption == Rock)
             {
                 Console.WriteLine("Its a tie");
@@ -71,7 +80,18 @@ namespace RPSLS
             {
                 Console.WriteLine(player1 + "Wins");
             }
-
+            else if (player1.playerOption == Paper && player2.playerOption == Rock || player2.playerOption == Spock)
+            {
+                Console.WriteLine(player1 + "Wins");
+            }
+            else
+            {
+                default;
+                Console.WriteLine("Please enter in an option that corresponds to the list option");
+            }
+            return compareOptions;
         }
+        
+
     }
 }
